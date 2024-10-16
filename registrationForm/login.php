@@ -1,6 +1,7 @@
 <?php include 'inc/header.php'?>
 <?php include 'inc/nav.php'?>
 <h1>Login page </h1>
+<div class="container">
 <form action="handleLogin.php" method="POST" class="text-center">
           <!-- Email field -->
           <div class="form-group row justify-content-center">
@@ -23,5 +24,6 @@
             </div>
           </div>
         </form>
+</div>
 
 <?php include 'inc/footer.php'?>
