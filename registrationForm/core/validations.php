@@ -32,7 +32,7 @@ function emailVal($email){
 
     if( !filter_var($email,FILTER_VALIDATE_EMAIL)){
        return false;
-       
+       // معنى هذا الشرط اذا ما تحقق الشرط رجعلي فولص ,طبعا الشرط انو يكون ايميل
     }
     return true;
     

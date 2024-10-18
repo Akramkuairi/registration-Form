@@ -1,8 +1,23 @@
+<?php
+session_start();
+?>
 <?php include 'inc/header.php'?>
 <?php include 'inc/nav.php'?>
 <h1>Login page </h1>
+<?php
+          if(isset($_SESSION['errors'])) :
+          foreach($_SESSION['errors'] as $error): ?>
+                
+            <div class="alert alert-danger text-center">
+              <?php  echo $error ?>
+            </div>
+
+            <?php endforeach ;
+            endif;
+            unset($_SESSION['errors']);
+             ?>
 <div class="container">
-<form action="handleLogin.php" method="POST" class="text-center">
+<form action="./handelers/hanelLogin.php" method="POST" class="text-center">
           <!-- Email field -->
           <div class="form-group row justify-content-center">
             <div class="col-10 col-sm-8 col-md-6">

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <?php include 'inc/header.php'?>
 <?php include 'inc/nav.php'?>
 <h1>Register Page </h1>
